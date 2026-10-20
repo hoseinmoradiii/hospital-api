@@ -147,8 +147,8 @@ export class AppointmentService {
         'Appointment not found',
       );
     return ApiResponse.success(
-      StatusCodes.NOT_FOUND,
-      ReasonPhrases.NOT_FOUND,
+      StatusCodes.OK,
+      ReasonPhrases.OK,
       `appointment status changed to ${status}`,
       appointment,
     );
